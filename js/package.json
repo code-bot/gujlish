@@ -1,0 +1,30 @@
+{
+  "name": "gujlish",
+  "description": "Transliteration from Gujurati to English",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-google": "^0.14.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code-bot/gujlish.git"
+  },
+  "author": "Sahaj Maharaj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/code-bot/gujlish/issues"
+  },
+  "homepage": "https://github.com/code-bot/gujlish#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "10.15.0"
+  }
+}
