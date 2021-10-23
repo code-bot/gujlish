@@ -1,0 +1,427 @@
+{
+  "\u0a85": {
+    "iso": "a",
+    "type": "vowel",
+    "subtype": "independent"
+  },
+  "\u0a86": {
+    "iso": "ā",
+    "type": "vowel",
+    "subtype": "independent"
+  },
+  "\u0a87": {
+    "iso": "i",
+    "type": "vowel",
+    "subtype": "independent"
+  },
+  "\u0a88": {
+    "iso": "ī",
+    "type": "vowel",
+    "subtype": "independent"
+  },
+  "\u0a89": {
+    "iso": "u",
+    "type": "vowel",
+    "subtype": "independent"
+  },
+  "\u0a8a": {
+    "iso": "ū",
+    "type": "vowel",
+    "subtype": "independent"
+  },
+  "\u0a8b": {
+    "iso": "r̥",
+    "type": "vowel",
+    "subtype": "independent"
+  },
+  "\u0a8c": {
+    "iso": "l̥",
+    "type": "vowel",
+    "subtype": "independent"
+  },
+  "\u0a8d": {
+    "iso": "ê",
+    "type": "vowel",
+    "subtype": "independent"
+  },
+  "\u0a8f": {
+    "iso": "e",
+    "type": "vowel",
+    "subtype": "independent"
+  },
+  "\u0a90": {
+    "iso": "ai",
+    "type": "vowel",
+    "subtype": "independent"
+  },
+  "\u0a91": {
+    "iso": "ô",
+    "type": "vowel",
+    "subtype": "independent"
+  },
+  "\u0a93": {
+    "iso": "o",
+    "type": "vowel",
+    "subtype": "independent"
+  },
+  "\u0a94": {
+    "iso": "au",
+    "type": "vowel",
+    "subtype": "independent"
+  },
+  "\u0ae0": {
+    "iso": "r̥̄",
+    "type": "vowel",
+    "subtype": "independent"
+  },
+  "\u0ae1": {
+    "iso": "l̥",
+    "type": "vowel",
+    "subtype": "independent"
+  },
+  "\u0abe": {
+    "iso": "ā",
+    "type": "vowel",
+    "subtype": "diacritic"
+  },
+  "\u0abf": {
+    "iso": "i",
+    "type": "vowel",
+    "subtype": "diacritic"
+  },
+  "\u0ac0": {
+    "iso": "ī",
+    "type": "vowel",
+    "subtype": "diacritic"
+  },
+  "\u0ac1": {
+    "iso": "u",
+    "type": "vowel",
+    "subtype": "diacritic"
+  },
+  "\u0ac2": {
+    "iso": "ū",
+    "type": "vowel",
+    "subtype": "diacritic"
+  },
+  "\u0ac3": {
+    "iso": "r̥",
+    "type": "vowel",
+    "subtype": "diacritic"
+  },
+  "\u0ac4": {
+    "iso": "r̥",
+    "type": "vowel",
+    "subtype": "diacritic"
+  },
+  "\u0ac7": {
+    "iso": "e",
+    "type": "vowel",
+    "subtype": "diacritic"
+  },
+  "\u0ac8": {
+    "iso": "ai",
+    "type": "vowel",
+    "subtype": "diacritic"
+  },
+  "\u0ac9": {
+    "iso": "ô",
+    "type": "vowel",
+    "subtype": "diacritic"
+  },
+  "\u0acb": {
+    "iso": "o",
+    "type": "vowel",
+    "subtype": "diacritic"
+  },
+  "\u0acc": {
+    "iso": "au",
+    "type": "vowel",
+    "subtype": "diacritic"
+  },
+  "\u0ae2": {
+    "iso": "l̥",
+    "type": "vowel",
+    "subtype": "diacritic"
+  },
+  "\u0ae3": {
+    "iso": "l̥",
+    "type": "vowel",
+    "subtype": "diacritic"
+  },
+  "\u0a95": {
+    "iso": "ka",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0a96": {
+    "iso": "kha",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0a97": {
+    "iso": "ga",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0a98": {
+    "iso": "gha",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0a99": {
+    "iso": "ṅa",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0a9a": {
+    "iso": "cha",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0a9b": {
+    "iso": "chha",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0a9c": {
+    "iso": "ja",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0a9d": {
+    "iso": "jha",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0a9e": {
+    "iso": "ña",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0a9f": {
+    "iso": "ṭa",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0aa0": {
+    "iso": "ṭha",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0aa1": {
+    "iso": "ḍa",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0aa2": {
+    "iso": "ḍha",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0aa3": {
+    "iso": "ṇa",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0aa4": {
+    "iso": "ta",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0aa5": {
+    "iso": "tha",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0aa6": {
+    "iso": "da",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0aa7": {
+    "iso": "dha",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0aa8": {
+    "iso": "na",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0aaa": {
+    "iso": "pa",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0aab": {
+    "iso": "fa",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0aac": {
+    "iso": "ba",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0aad": {
+    "iso": "bha",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0aae": {
+    "iso": "ma",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0aaf": {
+    "iso": "ya",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0ab0": {
+    "iso": "ra",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0ab2": {
+    "iso": "la",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0ab3": {
+    "iso": "ḷa",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0ab5": {
+    "iso": "va",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0ab6": {
+    "iso": "śa",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0ab7": {
+    "iso": "ṣa",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0ab8": {
+    "iso": "sa",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0ab9": {
+    "iso": "ha",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0ad0": {
+    "iso": "auma",
+    "type": "consonant",
+    "subtype": ""
+  },
+  "\u0ae6": {
+    "iso": "0",
+    "type": "numeric",
+    "subtype": ""
+  },
+  "\u0ae7": {
+    "iso": "1",
+    "type": "numeric",
+    "subtype": ""
+  },
+  "\u0ae8": {
+    "iso": "2",
+    "type": "numeric",
+    "subtype": ""
+  },
+  "\u0ae9": {
+    "iso": "3",
+    "type": "numeric",
+    "subtype": ""
+  },
+  "\u0aea": {
+    "iso": "4",
+    "type": "numeric",
+    "subtype": ""
+  },
+  "\u0aeb": {
+    "iso": "5",
+    "type": "numeric",
+    "subtype": ""
+  },
+  "\u0aec": {
+    "iso": "6",
+    "type": "numeric",
+    "subtype": ""
+  },
+  "\u0aed": {
+    "iso": "7",
+    "type": "numeric",
+    "subtype": ""
+  },
+  "\u0aee": {
+    "iso": "8",
+    "type": "numeric",
+    "subtype": ""
+  },
+  "\u0aef": {
+    "iso": "9",
+    "type": "numeric",
+    "subtype": ""
+  },
+  "\u0a81": {
+    "iso": "m̐",
+    "type": "nasalization",
+    "subtype": ""
+  },
+  "\u0a82": {
+    "iso": "ṁ",
+    "type": "nasalization",
+    "subtype": ""
+  },
+  "\u0abd": {
+    "iso": ":’",
+    "type": "special",
+    "subtype": "independent"
+  },
+  "\u0abc": {
+    "iso": "",
+    "type": "special",
+    "subtype": "diacritic"
+  },
+  "\u0acd": {
+    "iso": "",
+    "type": "special",
+    "subtype": "diacritic"
+  },
+  "\u0a83": {
+    "iso": "ḥ",
+    "type": "special",
+    "subtype": "diacritic"
+  },
+  "\u0ac5": {
+    "iso": "-",
+    "type": "unknown",
+    "subtype": ""
+  },
+  "\u0af0": {
+    "iso": "",
+    "type": "unknown",
+    "subtype": ""
+  },
+  "\u0af1": {
+    "iso": "-",
+    "type": "unknown",
+    "subtype": ""
+  },
+  "\u0af9": {
+    "iso": "-",
+    "type": "unknown",
+    "subtype": ""
+  }
+}

@@ -1,5 +1,5 @@
 const constants = require('./constants');
-const g2E = require('./mappings/gujurati_to_english.json');
+const chars = require('./mappings/gujurati_to_english/chars.json');
 const _supportedSourceAlphabets = [constants.alphabet.GUJURATI];
 const _supportedDestinationAlphabets = [constants.alphabet.ENGLISH];
 /**
@@ -37,15 +37,38 @@ class Transliterator {
       };
     }
     let transliteratedText = '';
+    let currChar = null;
     for (const codePoint of text) {
       console.log(codePoint);
-      let transliteratedChar = codePoint;
-      if (g2E[codePoint]) {
-        transliteratedChar = g2E[codePoint];
+      currChar = chars[codePoint];
+      console.log(currChar);
+      if (currChar == null || currChar.type == 'unknown') {
+        transliteratedText += codePoint;
+      } else if (currChar.type == 'consonant') {
+        transliteratedText += currChar.iso;
+      } else if (currChar.type == 'vowel') {
+        if (currChar.subtype == 'independent') {
+          transliteratedText += currChar.iso;
+        } else if (currChar.subtype == 'diacritic') {
+          transliteratedText = transliteratedText.slice(0, -1) +
+            currChar.iso;
+        }
+      } else if (currChar.type == 'nasalization') {
+        transliteratedText += currChar.iso;
+      } else if (currChar.type == 'special') {
+        // Handle each special character separately.
+        // TODO: Add other special cases.
+        switch (codePoint) {
+          case '\u0acd':
+            transliteratedText = transliteratedText.slice(0, -1);
+            break;
+          default:
+            break;
+        }
       }
-      console.log(transliteratedChar);
-      transliteratedText += transliteratedChar;
+      console.log(transliteratedText);
     }
+
     return {
       output: transliteratedText,
       error: null,

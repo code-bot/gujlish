@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 
 app.get('/transliterate', (req, res) => {
   const result =
-    transliterator.transliterate('તમે કેમ છો', 'gujurati', 'english');
+    transliterator.transliterate('સત્સંગ', 'gujurati', 'english');
   if (result.error) {
     console.log(result.error);
     res.send(result);
