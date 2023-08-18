@@ -1,7 +1,22 @@
 const constants = require('./constants');
 const chars = require('./mappings/gujurati_to_english/chars.json');
+const fs = require('fs');
+const vision = require('@google-cloud/vision');
 const _supportedSourceAlphabets = [constants.alphabet.GUJURATI];
 const _supportedDestinationAlphabets = [constants.alphabet.ENGLISH];
+
+/**
+   * function to encode file data to base64 encoded string
+   * @param {string} file Input file to encode.
+   * @return {Object} Encoded file data.
+   */
+function base64Encode(file) {
+  // read binary data
+  const imageFile = fs.readFileSync(file);
+  // convert binary data to base64 encoded string
+  return Buffer.from(imageFile).toString('base64');
+}
+
 /**
  * A class that transliterates from one alphabet to another.
  */
@@ -39,12 +54,10 @@ class Transliterator {
     let transliteratedText = '';
     let currChar = null;
     for (const codePoint of text) {
-      console.log(codePoint);
       currChar = chars[codePoint];
-      console.log(currChar);
       if (currChar == null || currChar.type == 'unknown') {
         transliteratedText += codePoint;
-      } else if (currChar.type == 'consonant') {
+      } else if (currChar.type == 'consonant' || currChar.type == 'numeric') {
         transliteratedText += currChar.iso;
       } else if (currChar.type == 'vowel') {
         if (currChar.subtype == 'independent') {
@@ -66,13 +79,44 @@ class Transliterator {
             break;
         }
       }
-      console.log(transliteratedText);
     }
-
     return {
       output: transliteratedText,
       error: null,
     };
+  }
+
+  /**
+   * Transliterates the input text from the source alphabet, to the destination
+   * alphabet.
+   * @param {string} filename Input image file to transliterate.
+   * @param {alphabet} source Source alphabet.
+   * @param {alphabet} destination Destination alphabet.
+   * @return {Object} Transliterated text and any errors.
+   */
+  async transliterateImage(filename, source, destination) {
+    // Creates a client
+    const client = new vision.ImageAnnotatorClient();
+
+    const request = {
+      'image': {
+        'content': base64Encode(filename),
+      },
+      'imageContext': {
+        'languageHints': ['gu'],
+      },
+    };
+    // Performs text detection on the local file
+    const [result] = await client.documentTextDetection(request);
+    if (result.error) {
+      return {
+        output: null,
+        error: result.error,
+      };
+    } else {
+      const detections = result.textAnnotations;
+      return this.transliterate(detections[0].description, source, destination);
+    }
   }
 }
 
